@@ -63,3 +63,129 @@
 .container__botao {
     display: none;
 }
+
+.titulo__cabecalho {
+    display: none;
+}
+
+.opçoes {
+    display: none;
+}
+
+.container__texto {
+    display:none;
+}
+
+.container__botao:checked ~ .container__rotulo > .cabecalho__menu-hamburguer {
+    background-image: url("../img/menu_black_24dp\ 1.svg");
+    
+}
+
+ .container__botao:checked~.container__rotulo {
+    background: var(--cor-azul);
+    
+}
+
+@media screen and ( min-width:1024px) {
+
+    .titulo__cabecalho,
+    .titulo__cabecalho__negrito {
+        font-family: var(--fonte-secundaria);
+        font-size: 32px;
+    }
+
+    .titulo__cabecalho {
+        font-weight: 400;
+        font-size: 30px;
+        display: block;
+    }
+
+    .titulo__cabecalho__negrito {
+        font-weight: 700;
+        
+    }
+    
+    .opçoes {
+        display: flex;
+        
+    }
+
+    .opçoes__item {
+        padding: 0 1em;
+        font-family: var(--fonte-principal);
+        color: var(--preto);
+        text-transform: uppercase;
+
+    }
+
+    .opçoes__link {
+        text-decoration: none;
+        color: var(--preto);
+
+    }
+
+    .container__imagem__transparente{
+        display: none;
+    }
+
+    .cabecalho__menu-hamburguer {
+        display: none;
+    }
+
+    .opçoes__botao:checked~.lista__menu  {
+        display: block;
+        width: auto;
+    }
+
+    .opçoes__botao {
+        display: none;
+    }
+
+    .opçoes__botao:checked ~ .opçoes__rotulo > .opçoes__item {
+        background: var(--cor-azul);
+        color: var(--branco-header);
+    } 
+
+    .opçoes__item {
+        padding: 1em;
+    }
+
+    .lista-menu__itens:hover {
+        background: var(--cor-azul);
+        
+    }
+
+    .lista-menu__itens:hover>.lista-menu__link {
+        -webkit-text-fill-color: var(--branco-header);
+        text-decoration: none;
+
+    }
+
+}
+
+@media screen and (min-width:1728px) {
+    .container__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--preto);
+        font-family: var(--fonte-principal);
+        font-size: 20px;
+    }
+    
+    .cabecalho {
+        padding: 0 2em;
+    }
+
+    .opçoes {
+        margin-right: auto;
+    }
+
+    .container__texto {
+        display: block;
+    }
+
+    .titulo__cabecalho {
+        margin-right: 1.5em;
+    }
+}
